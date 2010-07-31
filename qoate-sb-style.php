@@ -32,9 +32,12 @@ if($vpos=='top' && $hpos=='right') {
 		echo 'top:0;border-bottom:1px solid black;';
 		if($rb==1){ echo '-webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; border-bottom-left-radius: 5px;'; }
 }
-
-echo 'background-color:'.$_GET['bgc'].';';
-echo 'color:'.urldecode($_GET['tc']).';';
+if(strlen($_GET['bgc']) > 0) {
+	echo 'background-color:'.$_GET['bgc'].';
+	'; }
+if(strlen($_GET['tc']) > 0) {
+	echo 'color:'.urldecode($_GET['tc']).';
+	'; }
 echo ''.urldecode($_GET['css']);
 ?>
 }
