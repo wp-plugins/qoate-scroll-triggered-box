@@ -37,6 +37,9 @@ More info:
 
 Follow the instruction on the [Qoate Scroll Triggered Box](http://qoate.com/wordpress-plugins/scroll-triggered-box/) page.
 
+== Screenshots ==
+See the [Qoate Scroll Triggered Box](http://qoate.com/wordpress-plugins/scroll-triggered-box/) page for some screenshots of what the box will look like.
+
 == Changelog ==
 = 2.0 = 
 Huge update, added Social Media Sites!
