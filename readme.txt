@@ -12,7 +12,7 @@ Generates a scroll triggered box for social bookmarks or newsletter sign-up form
 
 = Qoate Scroll Triggered Box =
 
-Generated a box at pages of your choice which can containt everything in plain HTML, or easy social bookmark options.
+Generates a box at pages of your choice which can containt everything in plain HTML, or easy social bookmark options.
 
 This box is great to encourage your readers to share your content, cause it will only show up when a visitor has reached a certain part of your page.
 This ensures that the visitor liked your content. The right time to show your call to action is when they're done reading, this plugin makes that easy for you!
