@@ -12,32 +12,37 @@ font-family:Verdana;
 height:<?php echo $_GET['height']; ?>px;
 display:none;
 <?php
-if($hpos=='left' && $vpos=='bottom') {
-		echo 'bottom:0;border-top:1px solid black;';
-		echo 'left:0;border-right:1px solid black;';
-		if($rb==1){ echo '-webkit-border-top-right-radius: 5px; -moz-border-radius-topright: 5px; border-top-right-radius: 5px;'; }
+if($hpos=='left') {
+	echo 'left:0; border-right:1px solid black;';
+} else {
+	echo 'right:0; border-left:1px solid black;';
 }
-if($hpos=='right' && $vpos=='bottom') {
-		echo 'bottom:0;border-top:1px solid black;';
-		echo 'right:0;border-left:1px solid black;';
-		if($rb==1){ echo '-webkit-border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; border-top-left-radius: 5px;'; }
+if($vpos=='top') {
+	echo 'top:0; border-bottom:1px solid black;';
+} else {
+	echo 'bottom:0; border-top:1px solid black;';
 }
-if($vpos=='top' && $hpos =='left') {
-		echo 'top:0;border-bottom:1px solid black;';
-		echo 'left:0;border-right:1px solid black;';
-		if($rb==1){ echo '-webkit-border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; border-bottom-right-radius: 5px;'; }
-}
-if($vpos=='top' && $hpos=='right') {
-		echo 'right:0;border-left:1px solid black;';
-		echo 'top:0;border-bottom:1px solid black;';
-		if($rb==1){ echo '-webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; border-bottom-left-radius: 5px;'; }
-}
-if(strlen($_GET['bgc']) > 0) {
-	echo 'background-color:'.$_GET['bgc'].';
-	'; }
-if(strlen($_GET['tc']) > 0) {
-	echo 'color:'.urldecode($_GET['tc']).';
-	'; }
-echo ''.urldecode($_GET['css']);
 ?>
+}
+
+#qoate_social_bookmark h4{
+font-size:19px;
+font-color:#000;
+margin-bottom:10px;
+font-weight:bold;
+text-shadow:1px 1px 1px;
+}
+#qoate_social_bookmark a img{
+float:left;
+opacity:0.8;
+filter:alpha(opacity=80);
+margin:0;
+-moz-opacity:0.8;
+-khtml-opacity: 0.8;
+}
+#qoate_social_bookmark a img:hover{
+opacity:1;
+filter:alpha(opacity=100);
+-moz-opacity:1;
+-khtml-opacity:1;
 }

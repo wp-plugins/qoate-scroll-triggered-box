@@ -15,10 +15,12 @@ function qoate_add_sb_options_page() {
 // Init plugin options to white list our options
 function qoate_sb_settings_init(){
 	register_setting('qoate_sb_options', 'qoate_sb_holder');
+	register_setting('qoate_sb_options','qoate_sb_settings');
 }
 
 // Draw the menu page itself
 function qoate_create_sb_options_page() {
+global $social_sites;
 	?>
 <div class="wrap">
 	<h2>Qoate Scroll Triggered Box Settings</h2>
@@ -30,8 +32,16 @@ function qoate_create_sb_options_page() {
 					<div class="inside">
 					<p style="margin:5px">Here you can configure the content, the placement and the animation settings of the Qoate Scroll Triggered Box. Scroll below to do some advanced styling..</p>
 					<form method="post" action="options.php">
-						<?php settings_fields('qoate_sb_options');  $options = get_option('qoate_sb_holder',array('height'=>20,'vplacement'=>'bottom','hplacement'=>'right','animation'=>'slide','percentage'=>75,'text'=>'Your HTML-content goes here..','bgcolor'=>'white','textcolor'=>'black')); ?>
+						<?php settings_fields('qoate_sb_options');  $options = get_option('qoate_sb_holder',array('height'=>20,'vplacement'=>'bottom','hplacement'=>'right','animation'=>'slide','percentage'=>75,'text'=>'Your HTML-content goes here..','bgcolor'=>'white','textcolor'=>'black','do_on_posts'=>'1')); ?>
 						<table class="form-table">
+						<tr valign="top"><th scope="row">Show on</th>
+							<td>
+								Posts <input type="checkbox" name="qoate_sb_holder[do_on_posts]" value="1"<?php if($options['do_on_posts']=='1') echo ' CHECKED';?> /> 
+								Pages <input type="checkbox" name="qoate_sb_holder[do_on_pages]" value="1"<?php if($options['do_on_pages']=='1') echo ' CHECKED';?> /> 
+								Home <input type="checkbox" name="qoate_sb_holder[do_on_home]" value="1"<?php if($options['do_on_home']=='1') echo ' CHECKED';?> /> 
+								Archives <input type="checkbox" name="qoate_sb_holder[do_on_archive]" value="1"<?php if($options['do_on_archive']=='1') echo ' CHECKED';?> />
+							</td>
+						</tr>
 						<tr valign="top"><th scope="row">Height</th>
 							<td><input type="text" size="1" name="qoate_sb_holder[height]" value="<?php echo $options['height']; ?>" />px </td>
 						</tr>
@@ -50,7 +60,7 @@ function qoate_create_sb_options_page() {
 						<tr valign="top"><th scope="row">When to show?</th>
 							<td><input type="text" size="1" name="qoate_sb_holder[percentage]" value="<?php echo $options['percentage'];?>" />(% of total page height)</td>
 						</tr>
-						<tr valign="top"><th scope="row">Content (HTML)</th>
+						<tr valign="top"><th scope="row">HTML Content(optional) <small><a href="#qoate_social_bookmark_settings">(You can also show social bookmarks!)</a></small></th>
 							<td><textarea rows="8" cols="20" name="qoate_sb_holder[text]"><?php echo $options['text'];  ?>
 							</textarea></td>
 						</tr>
@@ -62,25 +72,23 @@ function qoate_create_sb_options_page() {
 				</div>				
 			</div>
 			<div class="postbox">
-			<h3 class="hndle"><span>Advanced Styling Settings</span></h3>
+			<h3 class="hndle" id="qoate_social_bookmark_settings"><span>Social Bookmark Options</span></h3>
 				<div class="inside">
-					<p style="margin:5px">This is where you can do some advanced CSS styling.</p>
+				<?php $sb_options = get_option('qoate_sb_settings',array('text'=>'Liked this post? Share it!')); ?>
+					<p style="margin:5px">Here you can choose to use social bookmarks where visitors can share your content. Note that if you use this, the HTML-content from above gets overruled.</p>
 					<table class="form-table">
-						<tr valign="top"><th scope="row">Use rounded borders?<small>(won't work in IE,IE sucks.)</small></th>
-							<td><input type="checkbox" name="qoate_sb_holder[roundedborders]" value="1"<?php if($options['roundedborders']=='1') echo ' CHECKED';?> /></td>
+						<tr valign="top"><th scope="row">Use Social Bookmarking</th>
+							<td><input type="checkbox" name="qoate_sb_settings[use_bookmarks]" value="1"<?php if($sb_options['use_bookmarks']=='1') echo ' CHECKED';?> /></td>
 						</tr>
-						<tr valign="top"><th scope="row">Background color</th>
-							<td><input type="text" size="4" name="qoate_sb_holder[bgcolor]" value="<?php echo $options['bgcolor'];?>" />(use obvious color name or hex codes e.g. black or #000000)</td>
+						<tr valign="top"><th scope="row">Heading</th>
+							<td><input type="text" name="qoate_sb_settings[text]" value="<?php echo $sb_options['text'];?>" /></td>
 						</tr>
-						<tr valign="top"><th scope="row">Text color</th>
-							<td><input type="text" size="4" name="qoate_sb_holder[textcolor]" value="<?php echo $options['textcolor'];?>" />(use obvious color name or hex codes e.g. black or #000000)</td>
-						</tr>
-						<tr valign="top"><th scope="row">Custom CSS<small> (custom css rules, e.g. text-align:left;)</th>
-							<td><textarea rows="4" cols="15" name="qoate_sb_holder[css]"><?php echo $options['css'];  ?>
-							</textarea></td>
-						</tr>
-						
-						
+						<tr valign="top"><th scope="row">Share options</th>
+						<td>
+						<?php foreach($social_sites as $name=>$site) { ?>
+							<span style="display:block"><input type="checkbox" value="1" name="qoate_sb_settings[<?php echo $name; ?>]"<?php if($sb_options[$name]=='1') echo ' CHECKED';?> /> <?php echo $name; ?></span>
+						<?php } ?>
+						</td></tr>
 					</table>
 					<p class="submit">
 							<input type="submit" class="button-primary" style="margin:5px;" value="<?php _e('Save Changes') ?>" />

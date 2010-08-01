@@ -4,26 +4,28 @@ Donate link: http://qoate.com/donate/
 Tags: social meda,newsletter,message,share,bookmark,scroll,call to action
 Requires at least: 2.0
 Tested up to: 3.0
-Stable tag: 1.1
+Stable tag: 2.0
 
-This plugins generates a box on post pages that slides or fades in in a corner of your choice.
+Generates a scroll triggered box for social bookmarks or newsletter sign-up forms.
 
 == Description ==
 
 = Qoate Scroll Triggered Box =
 
-Generates a box on post pages which you can customize to your liking!
+Generated a box at pages of your choice which can containt everything in plain HTML, or easy social bookmark options.
+
+This box is great to encourage your readers to share your content, cause it will only show up when a visitor has reached a certain part of your page.
+This ensures that the visitor liked your content. The right time to show your call to action is when they're done reading, this plugin makes that easy for you!
 
 Features:
 
 * Highly custumizable
-* Custom CSS styling (optional)
-* Custom HTML content (optional, but recommended)
-
-The box can contain everything you want, newsletter forms, social media share options or just plain text.
-
-This box is extremely good to encourage your visitors to share your content or sign-up to your newsletter because the box
-will only show up when your visitor reached a certain part of your page. It will then slide or fade in, and show your custom content.
+* Easy social bookmarks (Twitter,FB,SU,Digg,Delicious,RSS,MySpace,LinkedIn)
+* OR custom HTML content, can contain everything.
+* Animation: Slide or Fade
+* Placement: any corner
+* Percentage: when should the box appear
+* More.. just install and see for yourself!
 
 More info:
 
@@ -36,6 +38,13 @@ More info:
 Follow the instruction on the [Qoate Scroll Triggered Box](http://qoate.com/wordpress-plugins/scroll-triggered-box/) page.
 
 == Changelog ==
+= 2.0 = 
+Huge update, added Social Media Sites!
+
+* Social bookmarking options!
+* Show on other pages too (optional)
+* No more CSS, better do it manually.
+
 = 1.1 =
 * Advanced CSS styling
 * Rounded borders (optional)
