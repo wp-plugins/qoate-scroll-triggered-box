@@ -20,7 +20,8 @@ This ensures that the visitor liked your content. The right time to show your ca
 Features:
 
 * Highly custumizable
-* Easy social bookmarks (Twitter,FB,StumbleUpon,Digg,Delicious,RSS,MySpace,LinkedIn,Reddit,Technorati,Tumblr,Google,Netvibes,Mixx,Posterous,FriendFeed)
+* Easy social bookmarks (Twitter, FB, StumbleUpon, Digg, Delicious, RSS, MySpace, LinkedIn, Reddit,
+ Technorati, Tumblr, Google, Netvibes, Mixx, Posterous, FriendFeed)
 * OR custom HTML content, can contain everything.
 * Animation: Slide or Fade
 * Placement: any corner
