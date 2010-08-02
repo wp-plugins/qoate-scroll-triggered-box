@@ -4,7 +4,7 @@ Donate link: http://qoate.com/donate/
 Tags: social meda,newsletter,message,share,bookmark,scroll,call to action
 Requires at least: 2.0
 Tested up to: 3.0
-Stable tag: 2.0
+Stable tag: 2.1
 
 Generates a scroll triggered box for social bookmarks or newsletter sign-up forms.
 
@@ -20,7 +20,7 @@ This ensures that the visitor liked your content. The right time to show your ca
 Features:
 
 * Highly custumizable
-* Easy social bookmarks (Twitter,FB,SU,Digg,Delicious,RSS,MySpace,LinkedIn)
+* Easy social bookmarks (Twitter,FB,StumbleUpon,Digg,Delicious,RSS,MySpace,LinkedIn,Reddit,Technorati,Tumblr,Google,Netvibes,Mixx,Posterous,FriendFeed)
 * OR custom HTML content, can contain everything.
 * Animation: Slide or Fade
 * Placement: any corner
@@ -41,6 +41,11 @@ Follow the instruction on the [Qoate Scroll Triggered Box](http://qoate.com/word
 See the [Qoate Scroll Triggered Box](http://qoate.com/wordpress-plugins/scroll-triggered-box/) page for some screenshots of what the box will look like.
 
 == Changelog ==
+= 2.1 =
+
+* Added Reddit, Technorati, Mixx, Netvibes, FriendFeed, Google and Posterous as Social Bookmark options.
+* Added social network images in the backend
+
 = 2.0 = 
 Huge update, added Social Media Sites!
 

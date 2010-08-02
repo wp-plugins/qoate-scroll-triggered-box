@@ -86,7 +86,7 @@ global $social_sites;
 						<tr valign="top"><th scope="row">Share options</th>
 						<td>
 						<?php foreach($social_sites as $name=>$site) { ?>
-							<span style="display:block"><input type="checkbox" value="1" name="qoate_sb_settings[<?php echo $name; ?>]"<?php if($sb_options[$name]=='1') echo ' CHECKED';?> /> <?php echo $name; ?></span>
+							<span style="display:block"><input type="checkbox" value="1" name="qoate_sb_settings[<?php echo $name; ?>]"<?php if($sb_options[$name]=='1') echo ' CHECKED';?> /> <?php echo '<img width="18" style="vertical-align:middle;" height="18" src="'.WP_CONTENT_URL.'/plugins/'.plugin_basename(dirname(__FILE__)).'/images/'.strtolower($name).'.png" alt='.$name.' /> '.$name; ?></span>
 						<?php } ?>
 						</td></tr>
 					</table>

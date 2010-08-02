@@ -3,7 +3,7 @@
 Plugin Name: Qoate Scroll Triggered Box
 Plugin URI: http://qoate.com/wordpress-plugins/scroll-triggered-box/
 Description: A scroll triggered box for easy social bookmarks or a newsletter sign-up form. Great call to action!
-Version: 2.0
+Version: 2.1
 Author: Danny van Kooten
 Author URI: http://qoate.com
 License: GPL2
@@ -36,17 +36,41 @@ $social_sites = Array(
 	'Facebook' => Array(
 		'url' => 'http://www.facebook.com/share.php?u=PERMALINK&amp;t=TITLE',
 	),
+	'FriendFeed' => Array(
+		'url' => 'http://www.friendfeed.com/share?title=TITLE&amp;link=PERMALINK',
+	),
+	'Google' => Array(
+		'url' => 'http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=PERMALINK&amp;title=TITLE&amp;annotation=EXCERPT',
+	),
 	'LinkedIn' => Array(
 		'url' => 'http://www.linkedin.com/shareArticle?mini=true&amp;url=PERMALINK&amp;title=TITLE&amp;source=BLOGNAME&amp;summary=EXCERPT',
 	),
+	'Mixx' => Array(
+		'url' => 'http://www.mixx.com/submit?page_url=PERMALINK&amp;title=TITLE',
+	),
 	'MySpace' => Array(
 		'url' => 'http://www.myspace.com/Modules/PostTo/Pages/?u=PERMALINK&amp;t=TITLE',
+	),
+	'Netvibes' => Array(
+		'url' => 'http://www.netvibes.com/share?title=TITLE&amp;url=PERMALINK',
+	),
+	'Posterous' => Array(
+		'url' => 'http://posterous.com/share?linkto=PERMALINK&amp;title=TITLE&amp;selection=EXCERPT',
+	),
+	'Reddit' => Array(
+		'url' => 'http://reddit.com/submit?url=PERMALINK&amp;title=TITLE',
 	),
 	'RSS' => Array(
 		'url' => 'FEEDLINK',
 	),
 	'StumbleUpon' => Array(
 		'url' => 'http://www.stumbleupon.com/submit?url=PERMALINK&amp;title=TITLE',
+	),
+	'Technorati' => Array(
+		'url' => 'http://technorati.com/faves?add=PERMALINK',
+	),
+	'Tumblr' => Array(
+		'url' => 'http://www.tumblr.com/share?v=3&amp;u=PERMALINK&amp;t=TITLE&amp;s=EXCERPT',
 	),
 	'Twitter' => Array(
 		'url' => 'http://twitter.com/home?status=TITLE%20-%20PERMALINK',
