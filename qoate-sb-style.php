@@ -28,6 +28,8 @@ overflow:hidden;
 
 .qoate_box_content{
 margin:10px;
+display:block;
+clear:both;
 }
 
 #qoate_social_bookmark h4{
@@ -46,9 +48,6 @@ filter:alpha(opacity=80);
 margin:0;
 -moz-opacity:0.8;
 -khtml-opacity: 0.8;
-}
-#qoate_box_content br.break{
-clear:both;
 }
 
 #qoate_social_bookmark a img:hover{
