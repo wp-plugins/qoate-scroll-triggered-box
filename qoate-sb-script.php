@@ -17,7 +17,7 @@ var old_height = $q('#qoate_social_bookmark').css('height');
 					hideTheBox();
 				}
 			} else {
-				var c = $q('#comments').offset();
+				var c = $q('#respond').offset();
 				if(y>(c.top * 0.75)) {
 					showTheBox();
 				} else {
@@ -29,6 +29,7 @@ var old_height = $q('#qoate_social_bookmark').css('height');
 	$q('#qoate_close_box').click(function() {
 		$q("#qoate_social_bookmark").animate({
 			height:'12px',
+			padding:'0',
 		},1000,function() {
 			$q('#qoate_close_box').css('display','none');
 			$q('#qoate_show_box').css('display','');
