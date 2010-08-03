@@ -17,8 +17,12 @@ var old_height = $q('#qoate_social_bookmark').css('height');
 					hideTheBox();
 				}
 			} else {
-				var c = $q('#respond').offset();
-				if(y>(c.top * 0.75)) {
+				if($q('#comments').length) {
+					var c = $q('#comments').offset();
+				} else {
+					var c = $q('#respond').offset();
+				}
+				if(y>(c.top * 0.9)) {
 					showTheBox();
 				} else {
 					hideTheBox();

@@ -3,7 +3,7 @@
 Plugin Name: Qoate Scroll Triggered Box
 Plugin URI: http://qoate.com/wordpress-plugins/scroll-triggered-box/
 Description: A scroll triggered box for easy social bookmarks or a newsletter sign-up form. Great call to action!
-Version: 2.1.3
+Version: 2.1.4
 Author: Danny van Kooten
 Author URI: http://qoate.com
 License: GPL2
