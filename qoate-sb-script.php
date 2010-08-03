@@ -22,7 +22,7 @@ var old_height = $q('#qoate_social_bookmark').css('height');
 				} else {
 					var c = $q('#respond').offset();
 				}
-				if(y>(c.top-(0.85*$q(window).height()))) {
+				if(y>(c.top-(0.75*$q(window).height()))) {
 				//alert(c.top);
 					showTheBox();
 				} else {
