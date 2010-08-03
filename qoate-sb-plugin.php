@@ -67,7 +67,7 @@ if($sb_options['use_bookmarks'] != '1') {
 		$url = str_replace('EXCERPT', $excerpt, $url);
 		$url = str_replace('FEEDLINK', $blogrss, $url);
 		
-		$content.= '<a href="'.$url.'">';
+		$content.= '<a rel="nofollow" target="_blank" href="'.$url.'">';
 		$content.= '<img src="'.WP_CONTENT_URL.'/plugins/'.plugin_basename(dirname(__FILE__)).'/images/'.strtolower($name).'.png" alt='.$name.' />';
 		$content.='</a>';
 		}
