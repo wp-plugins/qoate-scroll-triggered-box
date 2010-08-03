@@ -105,8 +105,4 @@ function qoate_sb_settings_link($links) {
   array_unshift($links, $settings_link); 
   return $links; 
 }
-
-
-
-
-
+?>

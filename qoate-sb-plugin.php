@@ -19,13 +19,13 @@ global $post;
 function qoate_add_sb(){
 global $social_sites;
 global $post;
-$options = get_option('qoate_sb_holder',array('text'=>'Your HTML-content goes here..'));
+$options = get_option('qoate_sb_holder',array('text'=>'Your HTML-content goes here..','vplacement'=>'bottom'));
 $sb_options = get_option('qoate_sb_settings',array('text'=>'Liked this page? Share it!'));
 $content = '<div id="qoate_social_bookmark" style="background:transparent url('.WP_CONTENT_URL.'/plugins/'.plugin_basename(dirname(__FILE__)).'/overlay.png);">';
 
 if($options['with_minimize']=='1') {
 	$content .= '<img style="position:absolute; cursor:pointer; right:0; margin:2px; " id="qoate_close_box" src="'.WP_CONTENT_URL.'/plugins/'.plugin_basename(dirname(__FILE__)).'/close.png" alt="Close" />';
-	$content .= '<img style="position:absolute; display:none; cursor:pointer; right:0;" id="qoate_show_box" src="'.WP_CONTENT_URL.'/plugins/'.plugin_basename(dirname(__FILE__)).'/show.png" alt="Show" />';
+	$content .= '<img style="position:absolute; display:none; cursor:pointer; right:0;" id="qoate_show_box" src="'.WP_CONTENT_URL.'/plugins/'.plugin_basename(dirname(__FILE__)).'/show_'.$options['vplacement'].'.png" alt="Show" />';
 }
 
 if($sb_options['use_bookmarks'] != '1') {
