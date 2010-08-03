@@ -23,6 +23,7 @@ if($vpos=='top') {
 	echo 'bottom:0; border-top:1px solid black;';
 }
 ?>
+overflow:hidden;
 }
 
 .qoate_box_content{
