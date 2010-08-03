@@ -32,7 +32,7 @@ global $social_sites;
 					<div class="inside">
 					<p style="margin:5px">Here you can configure the content, the placement and the animation settings of the Qoate Scroll Triggered Box. Scroll below to do some advanced styling..</p>
 					<form method="post" action="options.php">
-						<?php settings_fields('qoate_sb_options');  $options = get_option('qoate_sb_holder',array('height'=>20,'vplacement'=>'bottom','hplacement'=>'right','animation'=>'slide','percentage'=>75,'text'=>'Your HTML-content goes here..','bgcolor'=>'white','textcolor'=>'black','do_on_posts'=>'1')); ?>
+						<?php settings_fields('qoate_sb_options');  $options = get_option('qoate_sb_holder',array('height'=>90,'vplacement'=>'bottom','hplacement'=>'right','animation'=>'slide','percentage'=>75,'text'=>'Your HTML-content goes here..','bgcolor'=>'white','textcolor'=>'black','do_on_posts'=>'1')); ?>
 						<table class="form-table">
 						<tr valign="top"><th scope="row">Show on</th>
 							<td>
@@ -44,6 +44,9 @@ global $social_sites;
 						</tr>
 						<tr valign="top"><th scope="row">Height</th>
 							<td><input type="text" size="1" name="qoate_sb_holder[height]" value="<?php echo $options['height']; ?>" />px </td>
+						</tr>
+						<tr valign="top"><th scope="row">Give visitors the option to minimize?</th>
+							<td><input type="checkbox" name="qoate_sb_holder[with_minimize]" value="1"<?php if($options['with_minimize']=='1') echo ' CHECKED';?> /></td>
 						</tr>
 						<tr valign="top"><th scope="row">Vertical Placement</th>
 							<td>Top <input type="radio" name="qoate_sb_holder[vplacement]" value="top"<?php if($options['vplacement']=='top') echo ' CHECKED';?> />
@@ -58,7 +61,7 @@ global $social_sites;
 							Fade <input type="radio" name="qoate_sb_holder[animation]" value="fade"<?php if($options['animation']=='fade') echo ' CHECKED';?> /></td>
 						</tr>
 						<tr valign="top"><th scope="row">When to show?</th>
-							<td><input type="text" size="1" name="qoate_sb_holder[percentage]" value="<?php echo $options['percentage'];?>" />(% of total page height)</td>
+							<td><input type="text" size="1" name="qoate_sb_holder[percentage]" value="<?php echo $options['percentage'];?>" />(% of total page height) ..or.. <b>ON POSTS/PAGES:</b> Show when at comments <input type="checkbox" name="qoate_sb_holder[show_at_comments]" value="1"<?php if($options['show_at_comments']=='1') echo ' CHECKED';?> /></td>
 						</tr>
 						<tr valign="top"><th scope="row">HTML Content(optional) <small><a href="#qoate_social_bookmark_settings">(You can also show social bookmarks!)</a></small></th>
 							<td><textarea rows="8" cols="20" name="qoate_sb_holder[text]"><?php echo $options['text'];  ?>

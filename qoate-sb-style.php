@@ -4,9 +4,9 @@ $vpos=$_GET['vpos'];
 $hpos=$_GET['hpos'];
 $rb=$_GET['rb'];
 ?>
+
 #qoate_social_bookmark{
 position:fixed;
-padding:15px;
 text-align:center;
 font-family:Verdana;
 height:<?php echo $_GET['height']; ?>px;
@@ -25,13 +25,19 @@ if($vpos=='top') {
 ?>
 }
 
+.qoate_box_content{
+margin:10px;
+}
+
 #qoate_social_bookmark h4{
+margin:15px 15px 0;
 font-size:19px;
-font-color:#000;
+color:#333;
 margin-bottom:10px;
 font-weight:bold;
-text-shadow:1px 1px 1px;
+text-shadow:1px 2px #999;
 }
+
 #qoate_social_bookmark a img{
 float:left;
 opacity:0.8;
@@ -40,6 +46,10 @@ margin:0;
 -moz-opacity:0.8;
 -khtml-opacity: 0.8;
 }
+#qoate_box_content br.break{
+clear:both;
+}
+
 #qoate_social_bookmark a img:hover{
 opacity:1;
 filter:alpha(opacity=100);
