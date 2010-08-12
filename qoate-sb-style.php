@@ -44,6 +44,7 @@ text-shadow:1px 2px #999;
 #qoate_social_bookmark a img{
 float:left;
 opacity:0.8;
+border:0;
 filter:alpha(opacity=80);
 margin:0;
 -moz-opacity:0.8;
