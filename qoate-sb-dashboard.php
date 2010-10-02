@@ -61,7 +61,7 @@ global $social_sites;
 							Fade <input type="radio" name="qoate_sb_holder[animation]" value="fade"<?php if($options['animation']=='fade') echo ' CHECKED';?> /></td>
 						</tr>
 						<tr valign="top"><th scope="row">When to show?</th>
-							<td><input type="text" size="1" name="qoate_sb_holder[percentage]" value="<?php echo $options['percentage'];?>" />(% of total page height) ..or.. <b>ON POSTS/PAGES:</b> Show when at comments <input type="checkbox" name="qoate_sb_holder[show_at_comments]" value="1"<?php if($options['show_at_comments']=='1') echo ' CHECKED';?> /></td>
+							<td><input type="text" size="1" name="qoate_sb_holder[percentage]" value="<?php echo $options['percentage'];?>" />(% of total page height) ..or.. <b>ON POSTS/PAGES:</b> Show when at: comments <input type="radio" name="qoate_sb_holder[show_at_comments]" value="1"<?php if($options['show_at_comments']=='1') echo ' CHECKED';?> /> end of post <input type="radio" name="qoate_sb_holder[show_at_comments]" value="2"<?php if($options['show_at_comments']=='2') echo ' CHECKED';?> /></td>
 						</tr>
 						<tr valign="top"><th scope="row">HTML Content(optional) <small><a href="#qoate_social_bookmark_settings">(You can also show social bookmarks!)</a></small></th>
 							<td><textarea rows="8" cols="20" name="qoate_sb_holder[text]"><?php echo $options['text'];  ?>

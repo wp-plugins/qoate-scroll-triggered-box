@@ -11,7 +11,9 @@ $options = get_option('qoate_sb_holder',array('height'=>90,'vplacement'=>'bottom
 function qoate_sb_add_scripts() {
 global $post;
 	$options = get_option('qoate_sb_holder',array('vplacement'=>'bottom','animation'=>'slide','percentage'=>75));
+	$sac = 0;
 	if((is_single() || is_page()) && (comments_open() && $options['show_at_comments'] == '1')) { $sac = '1'; }
+	if((is_single() || is_page()) && $options['show_at_comments'] == '2') { $sac = '2'; }
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('qoate_sb_script',WP_CONTENT_URL . '/plugins/' . plugin_basename(dirname(__FILE__)).'/qoate-sb-script.php?anim='.$options['animation'].'&vpos='.$options['vplacement'].'&perc='.$options['percentage'].'&sac='.$sac);
 }

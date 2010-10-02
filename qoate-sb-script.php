@@ -10,25 +10,31 @@ var old_height = $q('#qoate_social_bookmark').css('height');
 		// get the height of the document
 		var h = $q(document).height();
 		var y = $q(window).scrollTop();
-			if(sac!='1') {
+			if(sac == '0') {
 				if( (y*2) > (h*(perc/100))){
 					showTheBox();
 				} else {
 					hideTheBox();
 				}
-			} else {
+			} else if(sac == '1') {
 				if($q('#comments').length) {
 					var c = $q('#comments').offset();
 				} else {
 					var c = $q('#respond').offset();
 				}
 				if(y>(c.top-(0.75*$q(window).height()))) {
-				//alert(c.top);
 					showTheBox();
 				} else {
 					hideTheBox();
 				}
-			}
+			 } else if(sac == '2') {
+				var p = $q('.post').offset().top + $q('.post').height() - 1.1 * $q(window).height();
+				if(y>p) {
+					showTheBox();
+				} else {
+					hideTheBox();
+				}
+			 }
 	});
 	// Minimize the box
 	$q('#qoate_close_box').click(function() {
