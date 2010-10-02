@@ -6,7 +6,7 @@ Requires at least: 2.0
 Tested up to: 3.0.1
 Stable tag: 2.3
 
-Generates a scroll triggered box for social bookmarks or newsletter sign-up forms.
+Generates a scroll triggered call-to-action box, for example for social bookmarking options or newsletter sign-up forms!
 
 == Description ==
 
