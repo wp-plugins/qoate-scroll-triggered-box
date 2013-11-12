@@ -1,10 +1,10 @@
 === Plugin Name ===
-Contributors: Qoate
-Donate link: http://qoate.com/donate/
+Contributors: DvanKooten
+Donate link: http://dannyvankooten.com/donate/
 Tags: social meda,newsletter,message,share,bookmark,scroll,call to action
-Requires at least: 2.0
-Tested up to: 3.0.1
-Stable tag: 2.3
+Requires at least: 3.1
+Tested up to: 3.7.1
+Stable tag: 2.3.1
 
 Generates a scroll triggered call-to-action box, for example for social bookmarking options or newsletter sign-up forms!
 
@@ -12,37 +12,46 @@ Generates a scroll triggered call-to-action box, for example for social bookmark
 
 = Qoate Scroll Triggered Box =
 
+> This plugin is outdated. Please use [Scroll Triggered Boxes](http://wordpress.org/plugins/scroll-triggered-boxes/) instead.
+
 Generates a box at pages of your choice which can containt everything in plain HTML, or easy social bookmark options.
 
 This box is great to encourage your readers to share your content, cause it will only show up when a visitor has reached a certain part of your page.
 This ensures that the visitor liked your content. The right time to show your call to action is when they're done reading, this plugin makes that easy for you!
 
-Features:
+**Features:**
 
-* Highly custumizable
+* Highly customizable
 * Easy social bookmarks (Twitter, FB, StumbleUpon, Digg, Delicious, RSS, MySpace, LinkedIn, Reddit,
  Technorati, Tumblr, Google, Netvibes, Mixx, Posterous, FriendFeed)
-* OR custom HTML content, thus pretty much everything.
-* Animation: Slide or Fade
-* Placement: any corner
-* When should the box show up? (percentage, at comments, at post end)
-* Visitors can minimize/restore the box
+* OR custom HTML content, meaning you can show pretty much anything you want in the box.
+* Choose between a slide or fade animation
+* Choose the placement of the box
+* Configure when the box should show up: percentage of page height, end of post, after comments
+* Choose whether visitors should be able to minimize the box
 * More.. 
 
 More info:
 
-* [Qoate Scroll Triggered Box](http://qoate.com/wordpress-plugins/scroll-triggered-box/)
-* Read more great [WordPress tips](http://qoate.com/) to get the most out of your website
-* Check out more [WordPress plugins](http://qoate.com/wordpress/) by the same author
+* [Scroll Triggered Boxes](http://dannyvankooten.com/wordpress-plugins/scroll-triggered-boxes/)
+* Check out more [WordPress plugins](http://dannyvankooten.com/wordpress-plugins/) by the same author
+
+> Do *not* start using this plugin, choose the new and improved version instead: [Scroll Triggered Boxes](http://wordpress.org/plugins/scroll-triggered-boxes/).
 
 == Installation ==
 
-Follow the instruction on the [Qoate Scroll Triggered Box](http://qoate.com/wordpress-plugins/scroll-triggered-box/) page.
+This plugin is extremely outdated. Please use the new and improved plugin instead: [Scroll Triggered Boxes](http://wordpress.org/plugins/scroll-triggered-boxes/).
 
 == Screenshots ==
-See the [Qoate Scroll Triggered Box](http://qoate.com/wordpress-plugins/scroll-triggered-box/) page for some screenshots of what the box will look like.
+See the [screenshots](http://wordpress.org/plugins/scroll-triggered-boxes/screenshots/) section of the [Scroll Triggered Boxes](http://wordpress.org/plugins/scroll-triggered-boxes/) plugin for a better understanding of how you can benefit from scroll triggered boxes on your website.
 
 == Changelog ==
+
+= 2.3.1 - November 12, 2013 =
+- Removed all error notices
+- Improved the code quality a bit.
+- If you're still on this plugin: please switch to the [new and improved plugin](http://wordpress.org/plugins/scroll-triggered-boxes/).
+
 = 2.3 = 
 Added the ability to let the box show up at the end of a post.
 
