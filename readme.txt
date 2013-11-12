@@ -12,9 +12,9 @@ Generates a scroll triggered call-to-action box, for example for social bookmark
 
 = Qoate Scroll Triggered Box =
 
-> This plugin is outdated. Please use [Scroll Triggered Boxes](http://wordpress.org/plugins/scroll-triggered-boxes/) instead.
-
 Generates a box that slides in at a corner of the page after a certain point has been reached. The box can contain custom HTML or some social sharing options.
+
+> This plugin is outdated. Please use the [Scroll Triggered Boxes](http://wordpress.org/plugins/scroll-triggered-boxes/) plugin instead.
 
 This box is great to encourage your readers to share your content, cause it will only show up when a visitor has reached a certain part of your page. This ensures that the visitor liked your content, making this a great spot to ask them to take action.
 
@@ -30,19 +30,16 @@ This box is great to encourage your readers to share your content, cause it will
 * Choose whether visitors should be able to minimize the box
 * More.. 
 
+> Do *not* start using this plugin, use the new and improved version instead: [Scroll Triggered Boxes](http://wordpress.org/plugins/scroll-triggered-boxes/).
+
 More info:
 
-* [Scroll Triggered Boxes](http://dannyvankooten.com/wordpress-plugins/scroll-triggered-boxes/)
-* Check out more [WordPress plugins](http://dannyvankooten.com/wordpress-plugins/) by the same author
-
-> Do *not* start using this plugin, choose the new and improved version instead: [Scroll Triggered Boxes](http://wordpress.org/plugins/scroll-triggered-boxes/).
+* [Scroll Triggered Boxes](http://dannyvankooten.com/wordpress-plugins/scroll-triggered-boxes/), the new and improved version of this plugin.
+* Check out more [WordPress plugins](http://dannyvankooten.com/wordpress-plugins/) by [Danny van Kooten](http://dannyvankooten.com/)
 
 == Installation ==
 
-This plugin is extremely outdated. Please use the new and improved plugin instead: [Scroll Triggered Boxes](http://wordpress.org/plugins/scroll-triggered-boxes/).
-
-== Screenshots ==
-See the [screenshots](http://wordpress.org/plugins/scroll-triggered-boxes/screenshots/) section of the [Scroll Triggered Boxes](http://wordpress.org/plugins/scroll-triggered-boxes/) plugin for a better understanding of how you can benefit from scroll triggered boxes on your website.
+This plugin is extremely outdated and no longer supported. Please use the new and improved plugin instead: [Scroll Triggered Boxes](http://wordpress.org/plugins/scroll-triggered-boxes/).
 
 == Changelog ==
 
