@@ -14,10 +14,9 @@ Generates a scroll triggered call-to-action box, for example for social bookmark
 
 > This plugin is outdated. Please use [Scroll Triggered Boxes](http://wordpress.org/plugins/scroll-triggered-boxes/) instead.
 
-Generates a box at pages of your choice which can containt everything in plain HTML, or easy social bookmark options.
+Generates a box that slides in at a corner of the page after a certain point has been reached. The box can contain custom HTML or some social sharing options.
 
-This box is great to encourage your readers to share your content, cause it will only show up when a visitor has reached a certain part of your page.
-This ensures that the visitor liked your content. The right time to show your call to action is when they're done reading, this plugin makes that easy for you!
+This box is great to encourage your readers to share your content, cause it will only show up when a visitor has reached a certain part of your page. This ensures that the visitor liked your content, making this a great spot to ask them to take action.
 
 **Features:**
 
